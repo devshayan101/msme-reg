@@ -12,5 +12,5 @@ app.use(express.static('./public'));
 //Routes
 app.get('/', function (req, res) { res.render('index.ejs') });
 
-const PORT = 4000 || process.env.PORT;
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+//const PORT = 4000 || process.env.PORT;
+app.listen(process.env.PORT, () => console.log(`Server started on port ${process.env.PORT}`));
