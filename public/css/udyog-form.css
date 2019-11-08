@@ -1,0 +1,61 @@
+ 
+ .container {
+   max-width: 1000px;
+   background-color: #dae0f2;
+   text-align: center;
+  }
+
+  .header {
+   background-color: #006ba6;
+   text-align: center;
+   margin-bottom: 2rem;
+   padding: 1.7rem;
+   /* border-radius: 0 0 19px 19px; */
+   color: white;
+
+  }
+
+  .header h3 {
+   font-size: 1.2rem;
+   color: #efefef;
+  }
+
+
+  .form {
+   text-align: left;
+  }
+
+  .input {
+   border-radius: 7px;
+   margin-bottom: 10px;
+   height: 3rem;
+  }
+
+  .label {
+   margin-bottom: 10px;
+   padding: 0.7rem;
+   font-size: 1.1rem;
+   font-weight: 600;
+  }
+
+  .btn-form {
+   background-color: #006ba6;
+   width: 20rem;
+   height: 2.5rem;
+   color: white;
+   margin: 2rem;
+  }
+
+  .upload {
+   display: inline-block;
+  }
+
+  .form-item {
+   display: grid;
+   grid-template-columns: 1fr;
+   margin:1rem;
+  }
+  .submit{
+   background-color: green;
+   color: white;
+  }
