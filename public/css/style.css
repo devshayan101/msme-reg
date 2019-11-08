@@ -75,8 +75,7 @@ i{
 
 .foot-hero{
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: -30px;
+  padding: 2rem;
   background-color: #dae0f2;
 }
 .foot-hero-img, .foot-hero-text{
@@ -86,14 +85,14 @@ i{
   color: #282a2b;
   line-height: 0.5rem;
 }
-.foot-hero-text{
+/* .foot-hero-text{
   margin-left: 1.8rem;
 }
 
 .foot-hero-img{
    transform: translateY(-35%);
   
-}
+} */
 
 .list-group-item:hover{
   background-color: #dae0f2;
@@ -103,39 +102,30 @@ a{
   text-decoration: none;
 }
 .foot-bottom{
-  max-width: 1000px;
- 	
+  /* max-width: 1000px; */
+   margin: 0 auto;
+   text-align: center;
 	}
 .body{
  max-width: 1000px;
  margin: auto;
 }
 
-.ul .li{
-				list-style: none;
-				
-				padding: 20px ;
-				margin-left: 2px;
-				margin-top: 2px; 
-				background: teal;
-				height: 20px;
-				width: 73px;
-				text-align: center;
-				color: #eeeeee;
-				border: 0px;
-				border-radius: 30%;
-				text-shadow: 0px 0px 0px white;
-			}
-			.ul .li:hover{
-				background: sabgreen;
-				font-family: arial;
-				color: white;
-				font-weight: bold1;
-				text-shadow: 2px 2px 3px brown;
-				box-shadow: 0px 0px 5px 3px silver;
-				cursor: pointer;
-
-			}
+.li{
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  
+  border: 1px solid silver;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #4c4e4e;
+}
+.li:hover{
+  background-color: #c1e4f8;
+  color: black;
+  box-shadow: 1px 2px 7px #d7d7d7;
+}
 
 
 /*

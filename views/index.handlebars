@@ -1,61 +1,3 @@
-<div class="process-bucket">
-
-  <center>
-    <h3>{{formHead}} Fast and Easy..!!</h3> <br>
-  </center>
-  <div class="card-deck">
-    <div class="card">
-
-
-      <div class="card-body">
-        <h5 class="card-title">
-          <center><i class="fas fa-id-card"></i> </center>
-        </h5>
-        <p class="card-text">Fill the above MSME application form</p>
-
-      </div>
-      <center><i class="fas fa-arrow-alt-circle-right new"></i></center>
-    </div>
-    <div class="card">
-
-      <div class="card-body">
-        <h5 class="card-title">
-          <center><i class="far fa-credit-card"></i></center>
-        </h5>
-        <p class="card-text">Pay registration fees to confirm application</p>
-
-      </div>
-      <center><i class="fas fa-arrow-alt-circle-right new"></i></center>
-    </div>
-    <div class="card">
-
-      <div class="card-body">
-        <h5 class="card-title">
-          <center><i class="fas fa-users"></i>
-        </h5>
-        </center>
-        <p class="card-text">Our executive will process your application</p>
-
-      </div>
-      <center><i class="fas fa-arrow-alt-circle-right new"></i></center>
-    </div>
-    <div class="card">
-
-      <div class="card-body">
-        <h5 class="card-title">
-          <center><i class="fas fa-envelope"></i></center>
-        </h5>
-        <p class="card-text">Certificate will be sent to registered e-mail id</p>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-{{!-- <!-- Process banner end --> --}}
-
-
 {{!-- Form Starts --}}
 
 <div class="container">
@@ -73,15 +15,11 @@
   </h5>
   <form action="/submit" method="POST" enctype="multipart/form-data">
     <div class="form">
-      <div class="form-item">
+      <div class="form-item" id="formType">
         <label for="fromtype" class="label">Form Type</label>
         <select name="formtype" class="input" id="">
-          <option value="Udyog-ad">Udyog Aadhaar Registration</option>
-          <option value="Instant-Udyog-ad">Instant Udyog Aadhaar Registration</option>
-          <option value="Update-Udyog-ad">Update Udyog Aadhaar</option>
-          <option value="Print-Track">Print/Track Certificate</option>
-          <option value="Databank">Databank Registration</option>
-          <option value="GST">GST Registration</option>
+          <option value={{formHead}}>FormType</option>
+
         </select>
       </div>
 
@@ -135,7 +73,7 @@
       </div>
 
       <div class="form-item">
-        <label for="buisnessType" class="label">Select your buisness type:</label>
+        <label for="buisnessType" class="label">Select your business type:</label>
 
         <select name="buisnessType" class="input" id="">
           <option value="Proprietorship">Proprietorship</option>
@@ -211,6 +149,66 @@
   </form>
 </div>
 {{!-- Form Ends --}}
+
+{{!-- Process --Starts-- --}}
+
+<div class="process-bucket">
+
+  <center>
+    <h3>{{formHead}} Fast and Easy..!!</h3> <br>
+  </center>
+  <div class="card-deck">
+    <div class="card">
+
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <center><i class="fas fa-id-card"></i> </center>
+        </h5>
+        <p class="card-text">Fill the above MSME application form</p>
+
+      </div>
+      <center><i class="fas fa-arrow-alt-circle-right new"></i></center>
+    </div>
+    <div class="card">
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <center><i class="far fa-credit-card"></i></center>
+        </h5>
+        <p class="card-text">Pay registration fees to confirm application</p>
+
+      </div>
+      <center><i class="fas fa-arrow-alt-circle-right new"></i></center>
+    </div>
+    <div class="card">
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <center><i class="fas fa-users"></i>
+        </h5>
+        </center>
+        <p class="card-text">Our executive will process your application</p>
+
+      </div>
+      <center><i class="fas fa-arrow-alt-circle-right new"></i></center>
+    </div>
+    <div class="card">
+
+      <div class="card-body">
+        <h5 class="card-title">
+          <center><i class="fas fa-envelope"></i></center>
+        </h5>
+        <p class="card-text">Certificate will be sent to registered e-mail id</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{{!-- <!-- Process banner end --> --}}
+
 {{!-- <!-- Benefits/FaQ's section --Start-- -->
 
 <!-- Benefits Section --Start-- --> --}}

@@ -64,6 +64,11 @@ app.get('/warranty', (req, res) => {
 app.get('/terms', (req, res) => {
   res.render('terms')
 })
+
+app.get('/disclaimer', (req, res) => {
+  res.render('disclaimer')
+})
+
 app.post('/submit', upload, (req, res, err) => {
   const adminOutput = `
     <p>You have a new Registration</p>
