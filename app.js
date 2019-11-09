@@ -157,7 +157,7 @@ app.post('/submit', upload, (req, res, err) => {
     //This is Admin Mailing.
     let infoAdmin = await transporter.sendMail({
       from: '"MSME Registration" <foo@example.com>', // sender address
-      to: 'shayan.devtest@gmail.com', // list of receivers
+      to: 'eudyogindia.com@gmail.com', // list of receivers
       subject: 'ADMIN -MSME Registration', // Subject line
       //text: 'Hello world?', // plain text body
       html: adminOutput, // html body
