@@ -38,23 +38,23 @@ const upload = multer({
 
 //ROUTES
 app.get('/', (req, res) => {
-  res.render('index', { formHead: 'Udyog Aadhaar Registration', time: '1-2 Days' });
+  res.render('index', { formHead: 'Udyog Aadhaar Registration', time: '1-2 Days', price: '1500', payLink: 'https://imjo.in/wdGxZJ' });
 });
 
 app.get('/update', (req, res) => {
-  res.render('index', { formHead: 'Update, Print & Trace Acknowledgement', time: '1-2 Days' });
+  res.render('index', { formHead: 'Update, Print & Trace Acknowledgement', time: '1-2 Days', price: '1500', payLink: 'https://imjo.in/wdGxZJ' });
 });
 
 app.get('/databank', (req, res) => {
-  res.render('index', { formHead: 'Databank Registration', time: '1-2 Days' });
+  res.render('index', { formHead: 'Databank Registration', time: '1-2 Days', price: '1500', payLink: 'https://imjo.in/wdGxZJ' });
 });
 
 app.get('/instant', (req, res) => {
-  res.render('index', { formHead: 'Instant MSME Registration', time: '1-2 Days' });
+  res.render('index', { formHead: 'Instant MSME Registration', time: '1-2 Days', price: '2100', payLink: 'https://imjo.in/MxnV88' });
 });
 
 app.get('/gst', (req, res) => {
-  res.render('index', { formHead: 'GST Registration', time: '10-15 Days' })
+  res.render('index', { formHead: 'GST Registration', time: '10-15 Days', price: '1499', payLink: 'https://imjo.in/eVYjhp' })
 })
 
 app.get('/warranty', (req, res) => {

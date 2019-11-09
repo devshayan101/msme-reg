@@ -75,7 +75,7 @@
       <div class="form-item">
         <label for="buisnessType" class="label">Select your business type:</label>
 
-        <select name="buisnessType" class="input" id="">
+        <select name="buisnessType" class="input" id="firmType" onchange="privateFunction(this.value)">
           <option value="Proprietorship">Proprietorship</option>
           <option value="partnership">Partnership Firm</option>
           <option value="private-limited">Private Limited Company</option>
@@ -140,10 +140,24 @@
         <label for="panFile" class="label">Upload your Pancard:</label>
         <input type="file" id="pan-File" name="panFile" class="input" accept=".jpg, .pdf" required>
       </div>
+
+      <div class="form-item">
+        <label for="panFile" class="label">Please pay Rs. {{price}} for registration:</label>
+        <center>
+          <a href="https://imjo.in/e8DEfr">
+            <input type="button" id="private" name="payment" class="input payment" value="Make Payment" required
+              style="display: none;">
+          </a>
+          <a href={{payLink}}>
+            <input type="button" id="others" name="payment" class="input payment" value="Make Payment" required
+              style="display: block;">
+          </a>
+        </center>
+      </div>
     </div>
 
     <input type="reset" value="Clear Form" class="btn btn-primary btn-form">
-    <input type="submit" value="Submit" class="btn btn-primary btn-form">
+    <input type="submit" value="Submit" class="btn btn-primary btn-form" id="submit">
 
 
   </form>

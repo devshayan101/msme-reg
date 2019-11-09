@@ -1,0 +1,13 @@
+// let formType = document.querySelector('#formType');
+// document.addEventListener('DOMContentLoaded', function(){
+//   formType.addEventListener('onclick', )
+// })
+
+function privateFunction(val) {
+ if (val === "private-limited") {
+  document.querySelector('#private').style.display = "block";
+  document.querySelector('#others').style.display = "none";
+ }
+
+}
+

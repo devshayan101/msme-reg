@@ -64,3 +64,10 @@
   #formType{
     display: none;
   }
+  .payment{
+    width: 20rem;
+    
+  }
+  .payment:hover{
+    background-color: white;
+  }
