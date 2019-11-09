@@ -3,7 +3,7 @@
 <div class="container">
   <div>
     <h2 class="head">
-      <center><b>
+      <center><b id="head">
           {{formHead}}
         </b></center>
     </h2>
@@ -76,7 +76,7 @@
         <label for="buisnessType" class="label">Select your business type:</label>
 
         <select name="buisnessType" class="input" id="firmType" onchange="privateFunction(this.value)">
-          <option value="Proprietorship">Proprietorship</option>
+          <option value="Proprietorship" selected>Proprietorship</option>
           <option value="partnership">Partnership Firm</option>
           <option value="private-limited">Private Limited Company</option>
           <option value="public-limited">Public Limited Company</option>

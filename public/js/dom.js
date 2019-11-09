@@ -4,10 +4,12 @@
 // })
 
 function privateFunction(val) {
+
+ // if (document.querySelector('#head').innerHTML == "GST Registration") {
  if (val === "private-limited") {
   document.querySelector('#private').style.display = "block";
   document.querySelector('#others').style.display = "none";
  }
-
 }
+//}
 
