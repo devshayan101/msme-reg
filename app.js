@@ -186,9 +186,22 @@ app.post('/submit', upload, (req, res, err) => {
       html: userOutput, // html body
 
     });
+    if (req.body.formtype === "GST") {
+      if (req.body.buisnessType === "private-limited") {
+        res.redirect('https://imjo.in/e8DEfr')
+      }
+      else {
+        res.redirect('https://imjo.in/eVYjhp')
+      }
+    }
+    else if (req.body.formtype === "Instant") {
+      res.redirect('https://imjo.in/MxnV88')
+    }
+    else {
+      res.redirect('https://imjo.in/wdGxZJ')
+    }
 
-
-    res.render('index', { formHead: 'Udyog Aadhaar Registration', msg: 'Your form has been successfully submited!' })
+    // res.render('index', { formHead: 'Udyog Aadhaar Registration', msg: 'Your form has been successfully submited!' })
   }
 
   main().catch(console.error);
